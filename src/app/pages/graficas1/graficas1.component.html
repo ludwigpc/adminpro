@@ -1,3 +1,49 @@
-<p>
-  graficas1 works!
-</p>
+
+
+
+<div class="row">
+
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">{{graficos.crediflash.leyenda}}</h4>
+<app-grafico-dona [chartLabels]="graficos.crediflash.labels" [chartData]="graficos.crediflash.data" chartType="doughnut"></app-grafico-dona>
+       </div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+          <h4 class="card-title">{{graficos.ordinario.leyenda}}</h4>
+<app-grafico-dona [chartLabels]="graficos.ordinario.labels" [chartData]="graficos.ordinario.data" chartType="doughnut"></app-grafico-dona>
+       </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="row">
+
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+          <h4 class="card-title">{{graficos.colectivo.leyenda}}</h4>
+<app-grafico-dona [chartLabels]="graficos.colectivo.labels" [chartData]="graficos.colectivo.data" chartType="doughnut"></app-grafico-dona>
+       </div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+          <h4 class="card-title">{{graficos.credipoliza.leyenda}}</h4>
+<app-grafico-dona [chartLabels]="graficos.credipoliza.labels" [chartData]="graficos.credipoliza.data" chartType="doughnut"></app-grafico-dona>
+       </div>
+    </div>
+  </div>
+
+</div>
+
+
