@@ -9,25 +9,21 @@ import { ChartType, RadialChartOptions, ChartDataSets } from 'chart.js';
 })
 export class GraficoDonaComponent implements OnInit {
 
-  @Input('chartLabels') doughnutChartLabels: Label[] = [];
+/*   @Input('chartLabels') doughnutChartLabels: Label[] = [];
   @Input('chartData') doughnutChartData: MultiDataSet[] = [];
   @Input('chartType') doughnutChartType: string = '';
-
-
-
-/* // Radar
-public radarChartOptions: RadialChartOptions = {
-  responsive: true,
-};
-public radarChartLabels: Label[] = ['HASTA 50USD', '100USD', '200USD', '300USD', '400USD', '500USD', '>500USD'];
-
-public radarChartData: ChartDataSets [] = [
-  { data: [1, 5, 1, 1, 1, 1, 1], label: 'Con atraso' },
-  { data: [10, 5, 2, 1, 3, 1, 1], label: 'A tiempo' }
-];
-public radarChartType: ChartType = 'radar';
-
  */
+
+
+// Radar
+
+@Input('chartOptions') radarChartOptions: RadialChartOptions = { responsive: true,};
+
+@Input('chartLabels') radarChartLabels: Label[] = [];
+@Input('chartData') radarChartData: ChartDataSets [] = [];
+@Input('chartType') radarChartType: ChartType = 'radar';
+
+
 
   
 

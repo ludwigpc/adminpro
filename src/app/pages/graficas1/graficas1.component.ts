@@ -10,10 +10,12 @@ export class Graficas1Component implements OnInit {
 
   graficos: any = {
     'crediflash': {
-      'labels': ['Semanal', 'Quincenal', 'Mensual'],
-      'data':  [24, 30, 46],
-      'type': 'doughnut',
-      'leyenda': 'Crediflash'
+      'labels': ['A tiempo', 'Mora', '50USD', '100USD', '500USD'],
+      'data':  [
+        { data: [65, 59, 90, 81, 56], label: 'Series A' },
+        { data: [28, 48, 40, 19, 96], label: 'Series B' }],
+      'type': 'radar',
+      'leyenda': 'Tipo de crédito'
     },
     'ordinario': {
       'labels': ['Con encaje', 'Sin encaje'],

@@ -7,11 +7,16 @@ import { SidebarComponent } from "./sidebar/sidebar.component";
 import { BreadcrumbsComponent } from "./breadcrumbs/breadcrumbs.component";
 import { NopagefoundComponent } from "./nopagefound/nopagefound.component";
 
+import { HttpClientModule } from '@angular/common/http';
+import { AngularSvgIconModule } from 'angular-svg-icon';
+
 
 @NgModule({
     imports: [
         RouterModule,
-        CommonModule
+        CommonModule,
+        HttpClientModule,
+        AngularSvgIconModule
     ],
     declarations:[
         HeaderComponent,

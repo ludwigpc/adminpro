@@ -10,15 +10,15 @@
                         <li class="user-profile">
                             <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><img src="../assets/images/users/1.jpg" alt="user" /><span class="hide-menu">Marx PC </span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="javascript:void()">My Profile </a></li>
-                                <li><a href="javascript:void()">My Balance</a></li>
-                                <li><a href="javascript:void()">Inbox</a></li>
-                                <li><a routerLinkActive="active" routerLink="/account-settings">Account Setting</a></li>
-                                <li><a href="javascript:void()">Logout</a></li>
+                                <li><a href="javascript:void()">Mis datos</a></li>
+                                <li><a href="javascript:void()">Cambiar clave</a></li>
+                                <li><a href="javascript:void()">Mensajes</a></li>
+                                <li><a routerLinkActive="active" routerLink="/account-settings">Colores</a></li>
+                                <li><a href="javascript:void()">SALIR</a></li>
                             </ul>
                         </li>
                         <li class="nav-devider"></li>
-                        <li class="nav-small-cap">PERSONAL</li>
+                        <li class="nav-small-cap">BANCA PERSONAL</li>
 
                         <li *ngFor="let menu of _sidebar.menu"> 
                             <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i [class]="menu.icono"></i><span class="hide-menu">{{menu.titulo}}<span class="label label-rouded label-themecolor pull-right">{{menu.submenu.length}}</span></span></a>
